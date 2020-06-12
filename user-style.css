@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECE8E0;
+  background-image: url("BG-Image.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 479px) {
+  body {
+    background-color: #ECE8E0;
+    background-image: none;
+  }
+}
+
+.container {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 2.5rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.login_wrapper {
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+
+footer {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+}
+
+h1, h2, h4 {
+  font-family: 'Caladea', serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  color: #7C7571;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.form_header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #7C7571;
+  line-height: 1.2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+fieldset {
+  display: flex;
+  border: 0;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  max-width: 19.5rem;
+  margin: 0 auto 10px;
+}
+
+label {
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  margin: 20px 0 10px 0;
+  color: #7C7571;
+}
+
+input[type="email"]{
+  cursor: text;
+  text-align: start;
+  text-rendering: auto;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(46,60,73,.05);
+  border: 1px solid #555;
+  border-radius: 5px;
+  height: 2.35rem;
+  width: 18.9rem;
+  padding-left: 10px;
+  margin: 1px 0;
+  color: #7C7571;
+}
+
+input[type="password"]{
+  display: inline-block;
+  cursor: text;
+  text-align: start;
+  text-rendering: auto;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(46,60,73,.05);
+  border: 1px solid #555;
+  border-radius: 5px;
+  height: 2.35rem;
+  width: 18.9rem;
+  padding-left: 10px;
+  margin: 1px 0;
+  color: #C7C6BA;
+}
+
+input:focus {
+  outline-style:none;
+  box-shadow:none;
+  border-color:transparent;
+  border: 2px solid #615B59;
+  margin: 0;
+}
+
+.submit {
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  letter-spacing: .090rem;
+  padding: 10px 115px;
+  margin: 20px 0;
+  max-width: 100%;
+  background-color: #C7C6BA;
+  border: none;
+  border-radius: 5px;
+  color: #7C7571;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button[class="submit"]:hover {
+  background: #B8B7AC;
+}
+
+.Google {
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  letter-spacing: .090rem;
+  padding: 10px 67px;
+  margin: 10px 0;
+  max-width: 100%;
+  background-color: #4285F4;
+  background-image: image("5847f9cbcef1014c0b5e48c8.png");
+  background-position: left;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button[class="Google"]:hover {
+  background: #3772D2;
+}
+
+.Facebook {
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  letter-spacing: .090rem;
+  padding: 10px 59px;
+  margin: 10px 0;
+  max-width: 100%;
+  background-color: #3B5998;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button[class="Facebook"]:hover {
+  background: #2F497E;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  margin: 20px 0;
+  box-sizing: content-box;
+}
+
+.seperator_line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solid {
+  border-top: 1px solid #7C7571;
+  width: 118px;
+}
+
+.seperator_text {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0 10px;
+  transform: translateY(0);
+  min-width: 32px;
+  color: #7C7571;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  max-width: 19.5rem;
+  margin: 0 auto 16px;
+}
+
+a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: #7C7571;
+  padding-left: 1.7rem;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #615B59;
+}
